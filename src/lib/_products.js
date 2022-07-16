@@ -1,5 +1,3 @@
-import {base} from "$app/paths";
-
 const products = {
     'hat': {
         title: 'Hat',
