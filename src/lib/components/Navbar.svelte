@@ -1,6 +1,4 @@
 <script>
-import {cart} from "../stores/cart.js";
-import {cartOpen} from "../stores/state.js";
 import {goto} from "$app/navigation";
 
 </script>
@@ -23,9 +21,6 @@ import {goto} from "$app/navigation";
                 </g>
             </g>
         </svg>
-        <div style="display: flex; gap: 20px; align-items: center">
-            <button class:in-cart={$cart.length > 0} on:click={() => cartOpen(true)}>Cart {$cart.length > 0 ? '(' + $cart.length + ')' : ''}</button>
-        </div>
     </nav>
 </header>
 
@@ -33,10 +28,6 @@ import {goto} from "$app/navigation";
 
   header {
     width: 100%;
-    z-index: 99;
-    background-color: #121212;
-    position: fixed;
-    top:0;
 
     svg {
       cursor: pointer;
@@ -46,31 +37,11 @@ import {goto} from "$app/navigation";
 nav {
   height: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 1000px;
   padding: 30px;
   margin: 0 auto;
-}
-
-button {
-  cursor: pointer;
-  font-weight: bold;
-  background-color: #747474;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  transition: 200ms ease-in-out;
-
-  &:hover {
-    background-color: #989898;
-  }
-}
-
-.in-cart {
-  background-color: #37FF6B;
-  color: #121212;
 }
 </style>

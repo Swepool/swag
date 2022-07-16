@@ -5,6 +5,8 @@
     import {state} from "../lib/stores/state.js";
     import {onMount} from "svelte";
     import LoadingScreen from "../lib/components/LoadingScreen.svelte";
+    import {page} from "$app/stores";
+    import CartBanner from "../lib/components/CartBanner.svelte";
 
     let ready
 
@@ -26,7 +28,7 @@
     }
 </script>
 
-{#if $state.loading}
+{#if ($state.loading && $page.url === '/sussess')}
     <LoadingScreen/>
 {/if}
 
@@ -34,6 +36,7 @@
 <main>
     <slot/>
 </main>
+<CartBanner/>
 {#if $state.cartOpen}
     <Cart/>
 {/if}
@@ -41,4 +44,12 @@
 
 <style lang="scss" global>
   @import '../lib/theme/global.scss';
+
+  main {
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 568px) {
+      padding: 60px;
+    }
+  }
 </style>

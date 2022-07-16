@@ -53,7 +53,6 @@
         })
     }
 
-
 </script>
 
 <div in:fade out:fade on:click|self={() => cartOpen(false)} class="background"></div>
