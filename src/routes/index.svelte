@@ -2,7 +2,8 @@
     export let items
 </script>
 
-<div style="margin: 0 auto; display: flex; justify-content: center; max-width: 1000px; padding: 30px">
+<div class="quote" style="margin: 0 auto; display: flex; flex-direction: column; justify-content: center; max-width: 1000px; padding: 30px">
+    <h4>A KRYPTOKRONA STORE</h4>
     <p class="rep">GOTTA REP THE SET</p>
 </div>
 <div class="grid">
@@ -22,9 +23,22 @@
 
 <style lang="scss">
 
-  .rep {
-    font-size: 4rem;
+  .quote {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    padding: 20px;
     text-align: center;
+
+    h4 {
+      opacity: 60%;
+    }
+  }
+  .rep {
+    margin: 0;
+    font-size: 4rem;
     @media screen and (max-width: 768px) {
         font-size: 2.5rem;
     }
