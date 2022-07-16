@@ -1,4 +1,4 @@
-import products from "../../store/_products.js";
+import products from "../../lib/_products.js";
 
 /** @type {import('./__types/items').RequestHandler} */
 export async function get() {

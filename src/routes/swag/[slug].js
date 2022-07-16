@@ -1,4 +1,4 @@
-import products from "../../store/_products.js";
+import products from "$lib/_products";
 
 /** @type {import('./__types/[id]').RequestHandler} */
 export async function get({ params }) {
