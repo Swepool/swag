@@ -29,6 +29,12 @@
     -webkit-backdrop-filter: blur(8px);
     position: fixed;
     bottom: 0;
+
+
+    @media screen and (max-width: 568px) {
+      border-top: 1px solid #252525;
+      padding: 20px;
+    }
   }
 
   .banner {
