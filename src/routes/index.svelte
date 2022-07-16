@@ -75,6 +75,15 @@
             border-color: #37FF6B;
           }
 
+          @media screen and (max-width: 568px) {
+            &:hover {
+              border-color: #252525;
+            }
+            &:active {
+              border-color: #37FF6B;
+            }
+          }
+
         }
       }
     }
