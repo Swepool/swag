@@ -23,16 +23,18 @@ import {goto} from "$app/navigation";
                 </g>
             </g>
         </svg>
-        <button class:in-cart={$cart.length > 0} on:click={() => cartOpen(true)}>Cart {$cart.length > 0 ? '(' + $cart.length + ')' : ''}</button>
+        <div style="display: flex; gap: 20px; align-items: center">
+            <button class:in-cart={$cart.length > 0} on:click={() => cartOpen(true)}>Cart {$cart.length > 0 ? '(' + $cart.length + ')' : ''}</button>
+        </div>
     </nav>
 </header>
 
 <style lang="scss">
 
   header {
+    width: 100%;
     z-index: 99;
     background-color: #121212;
-    width: 100%;
     position: fixed;
     top:0;
 
@@ -42,13 +44,13 @@ import {goto} from "$app/navigation";
   }
 
 nav {
-  padding: 30px;
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1000px;
+  padding: 30px;
   margin: 0 auto;
 }
 

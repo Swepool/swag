@@ -1,7 +1,4 @@
-import {writable} from "svelte/store";
+import { persist, localStorage } from "@macfja/svelte-persistent-store"
+import { writable } from "svelte/store"
 
-//For the ui
-export const cart = writable([])
-
-//For stripe checkout
-export const order = writable([])
+export const cart = persist(writable([]), localStorage(), 'cart')

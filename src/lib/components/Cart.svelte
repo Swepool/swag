@@ -4,6 +4,7 @@
     import {cart} from "../stores/cart.js";
     import Close from "./buttons/Close.svelte";
     import {onDestroy, onMount} from "svelte";
+    import {goto} from "$app/navigation";
 
     onMount(() => {
         document.body.classList.toggle('fixed')
@@ -57,7 +58,10 @@
 
 <div in:fade out:fade on:click|self={() => cartOpen(false)} class="background"></div>
 <div in:fly|local="{{x: 50}}" out:fly|local="{{x: 50}}" class="cart">
-    <h2>Cart</h2>
+    <div style="display: flex; align-items: center; justify-content: space-between">
+        <h2>Cart</h2>
+        <p on:click={() => {goto('/faq'); cartOpen(false)}} style="margin: 0; opacity: 50%; cursor: pointer">FAQ</p>
+    </div>
     <h4>{price.toFixed(2)} EUR</h4>
     <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px">
         <button style="background-color: #747474" on:click={() => cartOpen(false)}>Keep shopping</button>
