@@ -50,5 +50,11 @@
       background-color: #171717;
       border-radius: 0.4rem;
       border: 1px solid #252525;
+      transition: 200ms ease-in-out;
+
+      &:hover {
+        border-color: #37FF6B;
+      }
+
     }
 </style>
