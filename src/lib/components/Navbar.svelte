@@ -21,6 +21,7 @@ import {goto} from "$app/navigation";
                 </g>
             </g>
         </svg>
+        <a target="_blank" href="https://kryptokrona.org"><p>Kryptokrona.org</p></a>
     </nav>
 </header>
 
@@ -37,11 +38,22 @@ import {goto} from "$app/navigation";
 nav {
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1000px;
   padding: 30px;
   margin: 0 auto;
+
+  a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+
+    &:hover, :active {
+      color: white;
+    }
+  }
 }
 </style>

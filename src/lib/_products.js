@@ -1,6 +1,6 @@
 const products = {
     'hat': {
-        title: 'Hat',
+        title: 'The Hat',
         slug: 'hat',
         price: 34.99,
         description: {
@@ -30,7 +30,7 @@ const products = {
         ]
     },
     'mug': {
-        title: 'Mug',
+        title: 'The Mug',
         slug: 'mug',
         price: 19.99,
         description: {
@@ -55,7 +55,7 @@ const products = {
         ]
     },
     'mousepad': {
-        title: 'Mouse pad',
+        title: 'THe Mouse pad',
         slug: 'mousepad',
         price: 45.99,
         description: {
@@ -79,7 +79,7 @@ const products = {
         ]
     },
     'beanie': {
-        title: 'Beanie',
+        title: 'The Beanie',
         slug: 'beanie',
         price: 34.99,
         description: {
