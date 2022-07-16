@@ -35,10 +35,12 @@ import {goto} from "$app/navigation";
     width: 100%;
     position: fixed;
     top:0;
+
     svg {
       cursor: pointer;
     }
   }
+
 nav {
   padding: 30px;
   height: 60px;
