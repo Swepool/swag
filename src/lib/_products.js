@@ -99,8 +99,8 @@ const products = {
         },
         variations: [{
             title: 'Black',
-            images: ['/static/beanie.png'],
-            cartImage: '/static/beanie.png',
+            images: ['beanie.png'],
+            cartImage: '/beanie.png',
             color: ['#000', '#000'],
             priceId: 'price_1LM7X4LDkY00e1cBhfUPvbcR'
         }
