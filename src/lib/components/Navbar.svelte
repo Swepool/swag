@@ -21,7 +21,7 @@ import {goto} from "$app/navigation";
                 </g>
             </g>
         </svg>
-        <a target="_blank" href="https://kryptokrona.org"><p>Kryptokrona.org</p></a>
+        <a target="_blank" href="https://kryptokrona.org"><p>Kryptokrona >></p></a>
     </nav>
 </header>
 
