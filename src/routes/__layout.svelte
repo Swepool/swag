@@ -46,6 +46,6 @@
   @import '../lib/theme/global.scss';
 
   main {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
 </style>
