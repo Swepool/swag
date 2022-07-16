@@ -32,6 +32,7 @@
 		"@macfja/svelte-persistent-store": "1.2.0",
 		"canvas-confetti": "^1.5.1",
 		"sass": "^1.53.0",
-		"svelte-preprocess": "^4.10.7"
+		"svelte-preprocess": "^4.10.7",
+		"svelte-simple-accordion": "^1.1.0"
 	}
 }
