@@ -7,9 +7,6 @@
     let selectedSize
 
     const  randomID = () => {
-        // Math.random should be unique because of its seeding algorithm.
-        // Convert it to base 36 (numbers + letters), and grab the first 9 characters
-        // after the decimal.
         return '_' + Math.random().toString(36).substr(2, 9);
     };
 
@@ -119,6 +116,7 @@
     }
 
     @media screen and (max-width: 768px) {
+      padding: 20px;
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }

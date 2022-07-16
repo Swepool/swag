@@ -3,7 +3,7 @@
 </script>
 
 <div style="margin: 0 auto; display: flex; justify-content: center; max-width: 1000px; padding: 30px">
-    <p style="font-size: 4rem; text-align: center">GOTTA REP THE SET</p>
+    <p class="rep">GOTTA REP THE SET</p>
 </div>
 <div class="grid">
     <a href="/swag/{items.hat.slug}">
@@ -22,6 +22,14 @@
 
 <style lang="scss">
 
+  .rep {
+    font-size: 4rem;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+  }
+
   .grid {
     padding: 30px;
     display: grid;
@@ -32,6 +40,7 @@
     gap: 1rem;
 
     @media screen and (max-width: 568px) {
+      padding: 20px;
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
