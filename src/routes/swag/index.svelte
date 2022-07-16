@@ -7,7 +7,7 @@
 </div>
 <div class="grid">
     <a  href="/swag/{items.hat.slug}">
-        <img class="card"g src={items.hat.variations[0].cartImage} alt="">
+        <img class="card"g src="{items.hat.variations[0].cartImage}" alt="">
     </a>
     <a  href="/swag/{items.mug.slug}">
         <img class="card" src={items.mug.variations[0].cartImage} alt="">
