@@ -7,7 +7,7 @@ import {goto} from "$app/navigation";
 
 <header>
     <nav>
-        <svg on:click={() => goto('/swag')} width="128px"  viewBox="0 0 852 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg on:click={() => goto('/')} width="128px"  viewBox="0 0 852 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Artboard" transform="translate(-329.000000, -186.000000)" fill="#FFFFFF" fill-rule="nonzero">
                     <g id="Group" transform="translate(329.000000, 186.000000)">

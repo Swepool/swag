@@ -30,7 +30,19 @@
             ]
         })
     }
+
     $: console.log($cart)
+
+    const buyNow = async (item) => {
+        let stripe = Stripe('pk_test_51KRclxLDkY00e1cBqedI0wWcpBb87sdT2oiO6MlosOYzqnA6U26DCQfP0nB2oMrU7fwxOKLQ5laozxEdS8Qb0ggy00HsdT7ret');
+        const {error} = await stripe.redirectToCheckout({
+            lineItems: [{price: item, quantity: 1}],
+            mode: 'payment',
+            successUrl: 'https://google.com',
+            cancelUrl: 'https://google.com',
+            shippingAddressCollection: {allowedCountries: ['AC', 'AD', 'AE', 'AF', 'AG', 'AI', 'AL', 'AM', 'AO', 'AQ', 'AR', 'AT', 'AU', 'AW', 'AX', 'AZ', 'BA', 'BB', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BL', 'BM', 'BN', 'BO', 'BQ', 'BR', 'BS', 'BT', 'BV', 'BW', 'BY', 'BZ', 'CA', 'CD', 'CF', 'CG', 'CH', 'CI', 'CK', 'CL', 'CM', 'CN', 'CO', 'CR', 'CV', 'CW', 'CY', 'CZ', 'DE', 'DJ', 'DK', 'DM', 'DO', 'DZ', 'EC', 'EE', 'EG', 'EH', 'ER', 'ES', 'ET', 'FI', 'FJ', 'FK', 'FO', 'FR', 'GA', 'GB', 'GD', 'GE', 'GF', 'GG', 'GH', 'GI', 'GL', 'GM', 'GN', 'GP', 'GQ', 'GR', 'GS', 'GT', 'GU', 'GW', 'GY', 'HK', 'HN', 'HR', 'HT', 'HU', 'ID', 'IE', 'IL', 'IM', 'IN', 'IO', 'IQ', 'IS', 'IT', 'JE', 'JM', 'JO', 'JP', 'KE', 'KG', 'KH', 'KI', 'KM', 'KN', 'KR', 'KW', 'KY', 'KZ', 'LA', 'LB', 'LC', 'LI', 'LK', 'LR', 'LS', 'LT', 'LU', 'LV', 'LY', 'MA', 'MC', 'MD', 'ME', 'MF', 'MG', 'MK', 'ML', 'MM', 'MN', 'MO', 'MQ', 'MR', 'MS', 'MT', 'MU', 'MV', 'MW', 'MX', 'MY', 'MZ', 'NA', 'NC', 'NE', 'NG', 'NI', 'NL', 'NO', 'NP', 'NR', 'NU', 'NZ', 'OM', 'PA', 'PE', 'PF', 'PG', 'PH', 'PK', 'PL', 'PM', 'PN', 'PR', 'PS', 'PT', 'PY', 'QA', 'RE', 'RO', 'RS', 'RU', 'RW', 'SA', 'SB', 'SC', 'SE', 'SG', 'SH', 'SI', 'SJ', 'SK', 'SL', 'SM', 'SN', 'SO', 'SR', 'SS', 'ST', 'SV', 'SX', 'SZ', 'TA', 'TC', 'TD', 'TF', 'TG', 'TH', 'TJ', 'TK', 'TL', 'TM', 'TN', 'TO', 'TR', 'TT', 'TV', 'TW', 'TZ', 'UA', 'UG', 'US', 'UY', 'UZ', 'VA', 'VC', 'VE', 'VG', 'VN', 'VU', 'WF', 'WS', 'XK', 'YE', 'YT', 'ZA', 'ZM', 'ZW',]}
+        })
+    }
 
 </script>
 
@@ -52,7 +64,7 @@
         <h1>{item.title.toUpperCase()}</h1>
         <div class="price">
             <h3>{item.price} EUR</h3>
-            <p>Includes all taxes and free worldwide shipping!</p>
+            <p>Includes VAT and free shipping!</p>
         </div>
         <div class="colors">
             {#if item.variations}
@@ -74,7 +86,7 @@
         </div>
         <div class="buttons">
             <button on:click={() => addToCart(item)}>Add to cart</button>
-            <button>Buy now</button>
+            <button on:click={() => buyNow(item.variations[selected].priceId)}>Buy now</button>
         </div>
         <div class="description">
             <p>{item.description.text}</p>

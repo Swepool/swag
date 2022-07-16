@@ -3,6 +3,7 @@
     import Footer from "../lib/components/Footer.svelte";
     import Cart from "../lib/components/Cart.svelte";
     import {state} from "../lib/stores/state.js";
+
 </script>
 
 <Navbar/>

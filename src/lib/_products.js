@@ -1,3 +1,5 @@
+import {base} from "$app/paths";
+
 const products = {
     'hat': {
         title: 'Hat',
@@ -15,7 +17,7 @@ const products = {
         variations: [{
             title: 'Black',
             images: ['/static/hat/hat.png'],
-            cartImage: '/static/hat/hat.png',
+            cartImage: `/static/hat/hat.png`,
             color: ['#000000', '#000000'],
             priceId: 'price_1LLrg5LDkY00e1cB4z95JEYx'
         }, {

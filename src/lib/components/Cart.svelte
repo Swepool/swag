@@ -3,6 +3,15 @@
     import {cartOpen} from "../stores/state.js";
     import {cart} from "../stores/cart.js";
     import Close from "./buttons/Close.svelte";
+    import {onDestroy, onMount} from "svelte";
+
+    onMount(() => {
+        document.body.classList.toggle('fixed')
+    })
+
+    onDestroy(() => {
+        document.body.classList.toggle('fixed')
+    })
 
     let stripe = Stripe('pk_test_51KRclxLDkY00e1cBqedI0wWcpBb87sdT2oiO6MlosOYzqnA6U26DCQfP0nB2oMrU7fwxOKLQ5laozxEdS8Qb0ggy00HsdT7ret');
 
