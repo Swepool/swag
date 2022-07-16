@@ -46,10 +46,6 @@
   @import '../lib/theme/global.scss';
 
   main {
-    margin-bottom: 80px;
-
-    @media screen and (max-width: 568px) {
-      margin-bottom: 60px;
-    }
+    margin-bottom: 120px;
   }
 </style>
