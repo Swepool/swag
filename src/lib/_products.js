@@ -2,7 +2,7 @@ const products = {
     'hat': {
         title: 'Hat',
         slug: 'hat',
-        price: 24.99,
+        price: 34.99,
         description: {
             text: 'The Organic Bucket Hat can do it all—shield you from the sun and be a stylish accessory at the same time. This premium-quality hat in trendy earth tones will charm you and your customers with its breathable material and clean stitching. Don’t hesitate to order this summer essential',
             features: [
@@ -17,13 +17,13 @@ const products = {
             images: ['/hat/hat.png'],
             cartImage: `/hat/hat.png`,
             color: ['#000000', '#000000'],
-            priceId: 'price_1LLrg5LDkY00e1cB4z95JEYx'
+            priceId: 'price_1LM9pDLDkY00e1cBqz8HN7sa'
         }, {
             title: 'Light Yellow',
             images: ['/hat/hat-light-yellow.png'],
             cartImage: '/hat/hat-light-yellow.png',
             color: ['#fff1d3', '#fff1d3'],
-            priceId: 'price_1LM6txLDkY00e1cBitaA9s1M'
+            priceId: 'price_1LM9nCLDkY00e1cBQbXqvFLD'
         }
         ],
         sizes: [
@@ -32,7 +32,7 @@ const products = {
     'mug': {
         title: 'Mug',
         slug: 'mug',
-        price: 14.99,
+        price: 19.99,
         description: {
             text: 'This sturdy mug is perfect for your morning coffee, afternoon tea, or whatever hot beverage you enjoy. It\'s glossy white and yields vivid prints that retain their quality when dish-washed and microwaved.',
             features: [
@@ -48,7 +48,7 @@ const products = {
             images: ['/mug/mug.png'],
             cartImage: '/mug/mug.png',
             color: ['#fff', '#fff'],
-            priceId: 'price_1LM6tNLDkY00e1cB2Z8fiD7G'
+            priceId: 'price_1LM9niLDkY00e1cBLrnNKdv8'
         }
         ],
         sizes: [
@@ -57,7 +57,7 @@ const products = {
     'mousepad': {
         title: 'Mouse pad',
         slug: 'mousepad',
-        price: 34.99,
+        price: 45.99,
         description: {
             text: 'Turn your gaming setup into a professional gaming station with this reliable and large Gaming Mouse Pad. You’ll never need to worry about adjusting a mouse pad mid-game again! It’s suitable for comfort and precision, with a sturdy grip that won’t slip no matter how intense your match.',
             features: [
@@ -72,7 +72,7 @@ const products = {
             images: ['/mousepad/mousepad.png'],
             cartImage: '/mousepad/mousepad.png',
             color: ['#272727', '#272727'],
-            priceId: 'price_1LM7LQLDkY00e1cBTif9RQAt'
+            priceId: 'price_1LM9oLLDkY00e1cBEG3EVVCp'
         }
         ],
         sizes: [
@@ -81,7 +81,7 @@ const products = {
     'beanie': {
         title: 'Beanie',
         slug: 'beanie',
-        price: 24.99,
+        price: 34.99,
         description: {
             text: 'The Organic Ribbed Beanie has a classic look, but the ribbed fabric brings a pinch of uniqueness. Wear this 100% organic cotton beanie during your outdoor adventures or combine it with a streetwear outfit. Thanks to its stylish look and practicality, it\'ll work for both! ',
             features: [
@@ -100,7 +100,7 @@ const products = {
             images: ['beanie.png'],
             cartImage: '/beanie.png',
             color: ['#000', '#000'],
-            priceId: 'price_1LM7X4LDkY00e1cBhfUPvbcR'
+            priceId: 'price_1LM9liLDkY00e1cBEfDIw2wx'
         }
         ],
         sizes: [
