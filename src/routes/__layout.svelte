@@ -28,7 +28,7 @@
     }
 </script>
 
-{#if ($state.loading && $page.url === '/sussess')}
+{#if ($state.loading && $page.url !== '/sussess')}
     <LoadingScreen/>
 {/if}
 
@@ -49,7 +49,7 @@
     margin-bottom: 80px;
 
     @media screen and (max-width: 568px) {
-      padding: 60px;
+      margin-bottom: 60px;
     }
   }
 </style>
