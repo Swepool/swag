@@ -45,6 +45,10 @@ nav {
   padding: 30px;
   margin: 0 auto;
 
+  @media screen and (max-width: 568px) {
+    justify-content: center;
+  }
+
   a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
@@ -53,6 +57,10 @@ nav {
 
     &:hover, :active {
       color: white;
+    }
+
+    @media screen and (max-width: 568px) {
+      display: none;
     }
   }
 }
