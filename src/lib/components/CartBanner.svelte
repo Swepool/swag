@@ -42,7 +42,11 @@
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 40px;
+
+    @media screen and (max-width: 568px) {
+      padding: 20px 40px;
+    }
   }
 
   button {
