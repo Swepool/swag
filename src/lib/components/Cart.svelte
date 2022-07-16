@@ -94,7 +94,7 @@
     backdrop-filter: blur(8px);
     background-color: rgba(18, 18, 18, 0.1);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 568px) {
       display: none;
     }
   }
@@ -112,7 +112,7 @@
     top: 0;
     padding: 30px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 568px) {
       max-width: none;
     }
   }
