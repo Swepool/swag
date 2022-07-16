@@ -30,6 +30,11 @@ import {goto} from "$app/navigation";
 <style lang="scss">
 
   header {
+    z-index: 99;
+    background-color: #121212;
+    width: 100%;
+    position: fixed;
+    top:0;
     svg {
       cursor: pointer;
     }
