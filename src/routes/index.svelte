@@ -6,16 +6,16 @@
     <p style="font-size: 4rem; text-align: center">GOTTA REP THE SET</p>
 </div>
 <div class="grid">
-    <a  href="/swag/{items.hat.slug}">
+    <a href="/swag/{items.hat.slug}">
         <img class="card"g src="{items.hat.variations[0].cartImage}" alt="">
     </a>
-    <a  href="/swag/{items.mug.slug}">
+    <a href="/swag/{items.mug.slug}">
         <img class="card" src={items.mug.variations[0].cartImage} alt="">
     </a>
     <a  href="/swag/{items.mousepad.slug}">
         <img class="card" src={items.mousepad.variations[0].cartImage} alt="">
     </a>
-    <a  href="/swag/{items.beanie.slug}">
+    <a href="/swag/{items.beanie.slug}">
         <img class="card" src={items.beanie.variations[0].cartImage} alt="">
     </a>
 </div>
@@ -36,25 +36,23 @@
     }
 
       a {
+        width: 100%;
         column-span: 1span/1span;
 
         img {
+          padding: 20px;
           width: 100%;
           height: auto;
+          background-color: #171717;
+          border-radius: 0.4rem;
+          border: 1px solid #252525;
+          transition: 200ms ease-in-out;
+
+          &:hover {
+            border-color: #37FF6B;
+          }
+
         }
       }
-    }
-
-    .card {
-      width: 100%;
-      background-color: #171717;
-      border-radius: 0.4rem;
-      border: 1px solid #252525;
-      transition: 200ms ease-in-out;
-
-      &:hover {
-        border-color: #37FF6B;
-      }
-
     }
 </style>
