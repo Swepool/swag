@@ -1,5 +1,5 @@
 <script>
-    import {cart} from "../stores/cart.cjs";
+    import {cart} from "../stores/cart.js";
     import {cartOpen} from "../stores/state.js";
 
     let price = 0

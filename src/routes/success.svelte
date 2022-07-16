@@ -1,5 +1,5 @@
 <script>
-    import {cart} from "../lib/stores/cart.cjs";
+    import {cart} from "../lib/stores/cart.js";
     import {onMount} from "svelte";
 
     let copyOfCart

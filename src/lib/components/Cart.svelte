@@ -1,7 +1,7 @@
 <script>
     import {fly, fade} from 'svelte/transition'
     import {cartOpen} from "../stores/state.js";
-    import {cart} from "../stores/cart.cjs";
+    import {cart} from "../stores/cart.js";
     import Close from "./buttons/Close.svelte";
     import {onDestroy, onMount} from "svelte";
     import {goto} from "$app/navigation";
