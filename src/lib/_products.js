@@ -16,14 +16,14 @@ const products = {
         },
         variations: [{
             title: 'Black',
-            images: ['/static/hat/hat.png'],
-            cartImage: `/static/hat/hat.png`,
+            images: ['/hat/hat.png'],
+            cartImage: `/hat/hat.png`,
             color: ['#000000', '#000000'],
             priceId: 'price_1LLrg5LDkY00e1cB4z95JEYx'
         }, {
             title: 'Light Yellow',
-            images: ['/static/hat/hat-light-yellow.png'],
-            cartImage: '/static/hat/hat-light-yellow.png',
+            images: ['/hat/hat-light-yellow.png'],
+            cartImage: '/hat/hat-light-yellow.png',
             color: ['#fff1d3', '#fff1d3'],
             priceId: 'price_1LM6txLDkY00e1cBitaA9s1M'
         }
@@ -47,8 +47,8 @@ const products = {
         },
         variations: [{
             title: 'White',
-            images: ['/static/mug/mug.png'],
-            cartImage: '/static/mug/mug.png',
+            images: ['/mug/mug.png'],
+            cartImage: '/mug/mug.png',
             color: ['#fff', '#fff'],
             priceId: 'price_1LM6tNLDkY00e1cB2Z8fiD7G'
         }
@@ -71,8 +71,8 @@ const products = {
         },
         variations: [{
             title: 'Grey',
-            images: ['/static/mousepad/mousepad.png'],
-            cartImage: '/static/mousepad/mousepad.png',
+            images: ['/mousepad/mousepad.png'],
+            cartImage: '/mousepad/mousepad.png',
             color: ['#272727', '#272727'],
             priceId: 'price_1LM7LQLDkY00e1cBTif9RQAt'
         }
