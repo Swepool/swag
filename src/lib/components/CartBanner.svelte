@@ -33,7 +33,6 @@
 
     @media screen and (max-width: 568px) {
       border-top: 1px solid #252525;
-      padding: 20px;
     }
   }
 
@@ -43,11 +42,7 @@
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 30px;
-
-    @media screen and (max-width: 568px) {
-      padding: 20px;
-    }
+    padding: 40px;
   }
 
   button {
