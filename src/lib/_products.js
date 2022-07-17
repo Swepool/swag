@@ -17,13 +17,13 @@ const products = {
             images: ['/hat/hat.png'],
             cartImage: `/hat/hat.png`,
             color: ['#000000', '#000000'],
-            priceId: 'price_1LM9pDLDkY00e1cBqz8HN7sa'
+            priceId: 'price_1LMVbSLDkY00e1cBPlYwiteX'
         }, {
             title: 'Light Yellow',
             images: ['/hat/hat-light-yellow.png'],
             cartImage: '/hat/hat-light-yellow.png',
             color: ['#fff1d3', '#fff1d3'],
-            priceId: 'price_1LM9nCLDkY00e1cBQbXqvFLD'
+            priceId: 'price_1LMVbxLDkY00e1cBkebpZsnO'
         }
         ],
         sizes: [
@@ -48,7 +48,7 @@ const products = {
             images: ['/mug/mug.png'],
             cartImage: '/mug/mug.png',
             color: ['#fff', '#fff'],
-            priceId: 'price_1LM9niLDkY00e1cBLrnNKdv8'
+            priceId: 'price_1LMVb1LDkY00e1cBBmRhrQdw'
         }
         ],
         sizes: [
@@ -57,7 +57,7 @@ const products = {
     'mousepad': {
         title: 'THe Mouse pad',
         slug: 'mousepad',
-        price: 45.99,
+        price: 44.99,
         description: {
             text: 'Turn your gaming setup into a professional gaming station with this reliable and large Gaming Mouse Pad. You’ll never need to worry about adjusting a mouse pad mid-game again! It’s suitable for comfort and precision, with a sturdy grip that won’t slip no matter how intense your match.',
             features: [
@@ -72,7 +72,7 @@ const products = {
             images: ['/mousepad/mousepad.png'],
             cartImage: '/mousepad/mousepad.png',
             color: ['#272727', '#272727'],
-            priceId: 'price_1LM9oLLDkY00e1cBEG3EVVCp'
+            priceId: 'price_1LMVaQLDkY00e1cBlVw8LQcR'
         }
         ],
         sizes: [
@@ -100,7 +100,7 @@ const products = {
             images: ['beanie.png'],
             cartImage: '/beanie.png',
             color: ['#000', '#000'],
-            priceId: 'price_1LM9liLDkY00e1cBEfDIw2wx'
+            priceId: 'price_1LMVZELDkY00e1cBWU2UlREd'
         }
         ],
         sizes: [

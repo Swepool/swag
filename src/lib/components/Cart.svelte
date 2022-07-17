@@ -14,7 +14,7 @@
         document.body.classList.toggle('fixed')
     })
 
-    let stripe = Stripe('pk_test_51KRclxLDkY00e1cBqedI0wWcpBb87sdT2oiO6MlosOYzqnA6U26DCQfP0nB2oMrU7fwxOKLQ5laozxEdS8Qb0ggy00HsdT7ret');
+    let stripe = Stripe('pk_live_51KRclxLDkY00e1cBGyrIPjf9Lc0qopqqiZtZ5JQ12wRYJy5T7dTGFF5fGsdZabaqfDGCshKA3Qra1flzg82ErdtT00XV5QgiKN');
 
     const checkout = async () => {
 
