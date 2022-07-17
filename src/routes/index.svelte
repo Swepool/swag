@@ -45,7 +45,7 @@
   }
 
   .grid {
-    padding: 30px;
+    padding: var(--padding-desktop);
     display: grid;
     margin: 0 auto;
     width: 100%;
@@ -54,7 +54,7 @@
     gap: 1rem;
 
     @media screen and (max-width: 568px) {
-      padding: 20px;
+      padding: var(--padding-mobile);
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
@@ -66,21 +66,21 @@
           padding: 20px;
           width: 100%;
           height: auto;
-          background-color: #171717;
+          background-color: var(--card-background-color);
           border-radius: 0.4rem;
-          border: 1px solid #252525;
+          border: 1px solid var(--card-border-color);
           transition: 200ms ease-in-out;
 
           &:hover {
-            border-color: #37FF6B;
+            border-color: var(--success-color);
           }
 
           @media screen and (max-width: 568px) {
             &:hover {
-              border-color: #252525;
+              border-color: var(--background-color);
             }
             &:active {
-              border-color: #37FF6B;
+              border-color: var(--success-color);
             }
           }
 

@@ -2,6 +2,7 @@
     import {cart} from "../stores/cart.js";
     import {cartOpen} from "../stores/state.js";
 
+
     let price = 0
     $: {
         price = 0
@@ -24,7 +25,7 @@
   .wrapper {
     width: 100%;
     z-index: 99;
-    background-color: rgba(18, 18, 18, 0.5);
+    background-color: var(--cart-banner-color);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     position: fixed;
@@ -32,7 +33,7 @@
 
 
     @media screen and (max-width: 568px) {
-      border-top: 1px solid #252525;
+      border-top: 1px solid var(--card-border-color);
     }
   }
 
@@ -52,7 +53,7 @@
   button {
     cursor: pointer;
     font-weight: bold;
-    background-color: #747474;
+    background-color: var(--button-background-color);
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -60,12 +61,12 @@
     transition: 200ms ease-in-out;
 
     &:hover {
-      background-color: #989898;
+      opacity: 60%;
     }
   }
 
   .in-cart {
-    background-color: #37FF6B;
+    background-color: var(--success-color);
     color: #121212;
   }
 </style>

@@ -164,12 +164,11 @@
       height: 36px;
       width: 36px;
       border-radius: 100px;
-      border: 3px solid white;
-      background-color: red;
+      border: 3px solid var(--button-background-color);
     }
 
     .selected {
-      border-color: dodgerblue;
+      border-color: var(--info-color);
     }
   }
 
@@ -185,11 +184,11 @@
       height: 36px;
       width: 36px;
       border-radius: 100px;
-      border: 3px solid white;
+      border: 3px solid var(--button-background-color);
     }
 
     .selected {
-      border-color: dodgerblue;
+      border-color: var(--info-color);
     }
   }
 

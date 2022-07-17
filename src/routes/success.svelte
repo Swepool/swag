@@ -20,7 +20,7 @@
     <div class="message">
         <h1>THANK YOU!</h1>
         <p>YOUR ORDER</p>
-        <p style="color: #37FF6B">{price.toFixed(2)} EUR</p>
+        <p style="color: var(--success-color);">{price.toFixed(2)} EUR</p>
     </div>
     {#if copyOfCart}
         <div class="order">
@@ -74,8 +74,8 @@
     gap: 20px;
     padding: 20px;
     align-items: center;
-    background-color: #171717;
-    border: 1px solid #252525;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--card-border-color);
     border-radius: 0.4rem;
 
     img {

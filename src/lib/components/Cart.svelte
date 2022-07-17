@@ -110,7 +110,7 @@
     max-width: 400px;
     position: fixed;
     height: 100vh;
-    background-color: #202020;
+    background-color: var(--background-color);
     right: 0;
     top: 0;
     padding: 30px;
@@ -134,7 +134,8 @@
     gap: 10px;
     align-items: center;
     justify-content: space-between;
-    background-color: #323232;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--card-border-color);
     border-radius: 0.4rem;
   }
 
