@@ -13,7 +13,7 @@
 
 <div class="wrapper">
     <div class="banner">
-        <p style="margin: 0">Total: {price} EUR</p>
+        <p style="margin: 0">Total: {price.toFixed(2)} EUR</p>
         <button class:in-cart={$cart.length > 0} on:click={() => cartOpen(true)}>
             Cart {$cart.length > 0 ? '(' + $cart.length + ')' : ''}</button>
     </div>
