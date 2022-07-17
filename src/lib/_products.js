@@ -17,7 +17,7 @@ const products = {
             images: ['/hat/hat.png'],
             cartImage: `/hat/hat.png`,
             color: ['#000000', '#000000'],
-            priceId: 'price_1LMVbSLDkY00e1cBPlYwiteX'
+            priceId: 'price_1LMVerLDkY00e1cBrWDDHAvG'
         }, {
             title: 'Light Yellow',
             images: ['/hat/hat-light-yellow.png'],
@@ -72,7 +72,7 @@ const products = {
             images: ['/mousepad/mousepad.png'],
             cartImage: '/mousepad/mousepad.png',
             color: ['#272727', '#272727'],
-            priceId: 'price_1LMVaQLDkY00e1cBlVw8LQcR'
+            priceId: 'price_1LMVfYLDkY00e1cBqq6S5d5R'
         }
         ],
         sizes: [
