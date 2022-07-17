@@ -1,3 +1,10 @@
+#Kryptokrona Store
+
+## Designed and built by me
+
+![store](https://user-images.githubusercontent.com/36674091/179425741-958dab5d-3229-4fe1-8a69-18ce8fff6f9b.png)
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
