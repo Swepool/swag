@@ -71,7 +71,7 @@
     <div class="items">
         {#if $cart.length > 0}
             {#each $cart as item}
-                <div class="card">
+                <div out:fade|local class="card">
                     <img height="64px" src={item.image} alt="">
                     <div>
                         <h4 style="margin: 0;">{item.title}</h4>
@@ -125,6 +125,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: 200ms ease-in-out;
   }
 
   .card {
